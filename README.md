@@ -9,6 +9,8 @@ Use your mouse to draw walls between the start and end point, then click "Visual
 Future functionality will include:
 
 1. Reset Button
-2. Edge cases including:
+2. Speed adjustment
+3. Edge cases including:
    Drawing walls while visualizing, will remove this.
-3. Other pathfinding algorithms
+4. Other pathfinding algorithms
+5. Clear path/Clear board
