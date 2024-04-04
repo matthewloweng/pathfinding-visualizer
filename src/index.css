@@ -1,5 +1,7 @@
 body {
   margin: 0;
+  padding: 20px; /* Add some space around the content */
+  background-color: #f0f2f5; /* Consistent with App changes */
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
@@ -8,6 +10,8 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+  background-color: #eee; /* Light background for code */
+  padding: 2px 4px; /* Add some padding */
+  border-radius: 4px; /* Round corners */
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }

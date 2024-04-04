@@ -1,22 +1,42 @@
 .App {
   text-align: center;
+  background-color: #f0f2f5; /* Lighter background for better contrast */
+  min-height: 100vh; /* Ensure it fills the whole viewport */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center content vertically */
 }
 
 .App-logo {
   height: 40vmin;
+  animation: App-logo-spin infinite 20s linear; /* Make sure logo spins */
 }
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 20px;
+  border-radius: 8px; /* Add some rounding to the corners */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* Subtle shadow for depth */
   color: white;
+  margin: 20px; /* Add some space around the header */
 }
 
 .App-link {
-  color: #09d3ac;
+  color: #09d3ac; /* Already a good color, consider adding hover effect */
+  text-decoration: none; /* Remove underline */
+  font-weight: bold; /* Make it stand out more */
+}
+
+.App-link:hover {
+  color: #07b89e; /* Slightly darker on hover for feedback */
+}
+
+/* Ensure the logo spin animation is defined if it's not already */
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
