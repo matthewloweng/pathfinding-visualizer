@@ -41,6 +41,11 @@
   animation: pulse 1s infinite; /* Add a subtle animation to highlight the path */
 }
 
+.node:hover {
+  cursor: pointer;
+  border: 1px solid #666; /* Add a border or change color on hover */
+}
+
 @keyframes pulse {
   0% {
     transform: scale(1);
