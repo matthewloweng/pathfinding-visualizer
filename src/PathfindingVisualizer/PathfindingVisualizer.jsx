@@ -116,7 +116,7 @@ export default class PathfindingVisualizer extends Component {
   //   }
   // }
 
-  visualizeDijkstra() {
+  visualizeDijkstra = () => {
     const animationSpeed = 20;
     const {grid} = this.state;
     const startNode = grid[START_NODE_ROW][START_NODE_COL];
@@ -127,7 +127,7 @@ export default class PathfindingVisualizer extends Component {
     this.animateAlgorithm(visitedNodesInOrder, nodesInShortestPathOrder, animationSpeed);
   }
 
-  visualizeBfs() {
+  visualizeBfs = () => {
     const animationSpeed = 10;
     const {grid} = this.state;
     const startNode = grid[START_NODE_ROW][START_NODE_COL];
@@ -138,7 +138,7 @@ export default class PathfindingVisualizer extends Component {
     this.animateAlgorithm(visitedNodesInOrder, nodesInShortestPathOrder, animationSpeed);
   }
 
-  visualizeDfs() {
+  visualizeDfs = () => {
     const animationSpeed = 10;
     const {grid} = this.state;
     const startNode = grid[START_NODE_ROW][START_NODE_COL];
@@ -150,7 +150,7 @@ export default class PathfindingVisualizer extends Component {
   
   
 
-  resetGrid() {
+  resetGrid = () => {
     // Get a fresh grid with the original start and finish nodes
     const newGrid = getInitialGrid();
     
@@ -181,7 +181,7 @@ export default class PathfindingVisualizer extends Component {
 
     return (
       <>
-        <button onClick={() => this.visualizeDijkstra()}>
+        {/* <button onClick={() => this.visualizeDijkstra()}>
           Visualize Dijkstra's Algorithm
         </button>
         <button onClick={() => this.visualizeBfs()}>
@@ -193,7 +193,7 @@ export default class PathfindingVisualizer extends Component {
 
         <button onClick={() => this.resetGrid()}>
           Reset Grid
-        </button>
+        </button> */}
         <div className="grid">
           {grid.map((row, rowIdx) =>
             row.map((node, nodeIdx) => {
