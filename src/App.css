@@ -1,10 +1,10 @@
 .App {
   text-align: center;
-  background-color: #f0f2f5; /* Lighter background for better contrast */
-  min-height: 100vh; /* Ensure it fills the whole viewport */
+  background-color: #f0f2f5;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Center content vertically */
+  justify-content: flex-start; /* Adjusted to flex-start */
 }
 
 .App-logo {
@@ -15,10 +15,29 @@
 .App-header {
   background-color: #282c34;
   padding: 20px;
-  border-radius: 8px; /* Add some rounding to the corners */
-  box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* Subtle shadow for depth */
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   color: white;
-  margin: 20px; /* Add some space around the header */
+  margin-bottom: 20px; /* Adjusted for spacing below the header */
+  display: flex; /* Make the header flex to arrange items inline */
+  justify-content: center; /* Center the buttons */
+  align-items: center;
+  flex-wrap: wrap; /* Wrap items on small screens */
+}
+
+.App-header button {
+  margin: 0 10px; /* Space out buttons */
+  padding: 10px 20px; /* Make buttons larger */
+  border: none;
+  border-radius: 4px;
+  background-color: #09d3ac;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.App-header button:hover {
+  background-color: #07b89e;
 }
 
 .App-link {
